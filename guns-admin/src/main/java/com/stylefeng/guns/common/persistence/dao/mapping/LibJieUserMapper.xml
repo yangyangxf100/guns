@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.common.persistence.dao.LibJieUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.stylefeng.guns.common.persistence.model.LibJieUser">
+        <id column="id" property="id" />
+        <result column="loginId" property="loginId" />
+        <result column="loginPwd" property="loginPwd" />
+        <result column="nickName" property="nickName" />
+        <result column="pic" property="pic" />
+        <result column="sex" property="sex" />
+        <result column="phone" property="phone" />
+        <result column="thirdId" property="thirdId" />
+        <result column="des" property="des" />
+        <result column="address" property="address" />
+        <result column="createTime" property="createTime" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, loginId, loginPwd, nickName, pic, sex, phone, thirdId, des, address, createTime, status
+    </sql>
+
+</mapper>
